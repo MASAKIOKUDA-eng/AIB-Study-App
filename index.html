@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIB-C01 問題集</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="brand" id="brand">AIB-C01 問題集</a>
+    <div class="topbar-right">
+      <span id="timer" class="timer" hidden></span>
+      <button id="themeBtn" class="icon-btn" type="button" aria-label="テーマ切替">◐</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- ホーム -->
+    <section id="home" class="screen">
+      <div class="hero">
+        <h1>AWS Certified AI Business Strategist</h1>
+        <p class="muted">AIB-C01 合格対策 オリジナル問題 <strong id="totalCount">0</strong> 問</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h2>演習モード</h2>
+          <p class="muted">ランダムに <strong>10問</strong>。1問ごとに正誤と解説を表示します。</p>
+          <fieldset class="field">
+            <legend>出題範囲</legend>
+            <label><input type="radio" name="pdomain" value="0" checked> 全ドメイン</label>
+            <div id="domainRadios"></div>
+            <label><input type="radio" name="pdomain" value="wrong"> 間違えた問題のみ (<span id="wrongCount">0</span>)</label>
+          </fieldset>
+          <button id="startPractice" class="btn primary" type="button">演習を開始</button>
+        </article>
+
+        <article class="card">
+          <h2>本番試験モード</h2>
+          <p class="muted">本番同様 <strong id="examInfo"></strong>。途中で正誤は表示されず、提出後にスコア（100〜1000点、700点合格）を表示します。</p>
+          <ul class="small muted">
+            <li>ドメインの配点比率どおりに出題</li>
+            <li>見直しフラグ・問題一覧から移動可能</li>
+            <li>時間切れで自動採点</li>
+          </ul>
+          <button id="startExam" class="btn primary" type="button">試験を開始</button>
+          <button id="resumeExam" class="btn" type="button" hidden>中断した試験を再開</button>
+        </article>
+      </div>
+
+      <article class="card">
+        <h2>学習の記録</h2>
+        <div id="stats"></div>
+        <button id="resetStats" class="btn small-btn" type="button">記録をリセット</button>
+      </article>
+
+      <article class="card">
+        <h2>出題範囲と参考資料</h2>
+        <div id="domainTable"></div>
+        <ul id="refList" class="small"></ul>
+      </article>
+    </section>
+
+    <!-- 出題画面 -->
+    <section id="quiz" class="screen" hidden>
+      <div class="quiz-head">
+        <span id="qProgress" class="muted"></span>
+        <span id="qDomain" class="tag"></span>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <h2 id="qText" class="qtext"></h2>
+      <p id="qHint" class="hint"></p>
+      <div id="choices" class="choices"></div>
+      <div id="feedback" class="feedback" hidden></div>
+      <div class="quiz-actions">
+        <button id="prevBtn" class="btn" type="button">前へ</button>
+        <label id="flagWrap" class="flag"><input type="checkbox" id="flagBox"> 見直し</label>
+        <button id="checkBtn" class="btn primary" type="button">解答する</button>
+        <button id="nextBtn" class="btn primary" type="button">次へ</button>
+      </div>
+      <div id="examNav" hidden>
+        <details class="navpanel">
+          <summary>問題一覧 <span id="answeredCount" class="muted"></span></summary>
+          <div id="navGrid" class="navgrid"></div>
+        </details>
+        <button id="submitExam" class="btn danger" type="button">試験を終了して採点</button>
+      </div>
+      <button id="quitBtn" class="btn link" type="button">ホームへ戻る</button>
+    </section>
+
+    <!-- 結果画面 -->
+    <section id="result" class="screen" hidden>
+      <div id="resultSummary" class="card center"></div>
+      <div id="domainResult" class="card"></div>
+      <div class="card">
+        <h2>解答の確認</h2>
+        <label class="small"><input type="checkbox" id="onlyWrong"> 不正解のみ表示</label>
+        <div id="reviewList"></div>
+      </div>
+      <div class="center">
+        <button id="againBtn" class="btn primary" type="button">もう一度</button>
+        <button id="homeBtn" class="btn" type="button">ホームへ</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/meta.js"></script>
+  <script src="data/q-d1.js"></script>
+  <script src="data/q-d2.js"></script>
+  <script src="data/q-d3.js"></script>
+  <script src="data/q-d4.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
