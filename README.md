@@ -51,3 +51,11 @@ data/q-d1.js      D1 の問題（q-d2〜q-d4 も同様）
 ```
 
 本番試験モードの問題数や試験時間は `data/meta.js` の `exam` で変更できます。
+
+## GitHub Pages での公開
+
+1. このリポジトリの **Settings → Pages** を開く
+2. **Source** で「Deploy from a branch」を選び、Branch を `main`、フォルダを `/ (root)` にして **Save**
+3. 数分後に `https://masakiokuda-eng.github.io/AIB-Study-App/` で公開されます
+
+※ `.nojekyll` を置いているので、Jekyll の変換を行わずにそのまま配信されます。
