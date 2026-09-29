@@ -9,8 +9,8 @@
   ALL.forEach(function (q) { BY_ID[q.id] = q; });
 
   var LETTERS = "ABCDEFGH";
-  var STORE_KEY = "aib-c01-study-v1";
-  var EXAM_KEY = "aib-c01-exam-session-v1";
+  var STORE_KEY = "aib-c01-study-v2";
+  var EXAM_KEY = "aib-c01-exam-session-v2";
 
   // ---------- storage ----------
   function load(key, fallback) {
