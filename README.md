@@ -1,7 +1,7 @@
 # AIB-Study-App
 
 AWS Certified AI Business Strategist（**AIB-C01**）合格対策のための問題集アプリです。
-企業の導入事例をもとにしたシナリオ形式のオリジナル問題を **300問** 収録し、「演習モード」と「本番試験モード」を用意しています。
+企業の導入事例をもとにしたシナリオ形式のオリジナル問題を **340問** 収録し、「演習モード」と「本番試験モード」を用意しています。
 
 ## 使い方
 
@@ -18,14 +18,15 @@ AWS Certified AI Business Strategist（**AIB-C01**）合格対策のための問
 
 | ドメイン | 配点比率 | 問題数 |
 | --- | --- | --- |
-| D1 AIの基礎とリテラシー | 24% | 72 |
-| D2 AI戦略とビジネス価値の創出 | 28% | 84 |
-| D3 AIガバナンスと責任あるAIのリーダーシップ | 24% | 72 |
-| D4 ビジネスの準備、リーダーシップ、AIトランスフォーメーション | 24% | 72 |
+| D1 AIの基礎とリテラシー | 24% | 76 |
+| D2 AI戦略とビジネス価値の創出 | 28% | 94 |
+| D3 AIガバナンスと責任あるAIのリーダーシップ | 24% | 78 |
+| D4 ビジネスの準備、リーダーシップ、AIトランスフォーメーション | 24% | 92 |
 
 - 「ある企業が〜。最も適切なものはどれですか」という、企業の状況と制約から最適な判断を選ぶ問題が中心です。
 - 誤りの選択肢も「もっともらしいが条件に合わない」内容にしており、選択肢の長さで正解がわからないよう調整しています。
-- 択一問題（4択）と複数選択問題（44問）を収録しています。
+- 択一問題（4択）と複数選択問題（47問）を収録しています。
+- AWSの「生成AI成熟度モデル」（Envision → Experiment → Launch → Scale の4レベルと、ビジネス・ピープル・ガバナンス・プラットフォーム・セキュリティの5つの柱）に関する問題を40問収録しています。
 - 選択肢は出題のたびにシャッフルされます。
 - 問題はすべて公開情報をもとにしたオリジナル問題で、実際の試験問題ではありません。
 
@@ -35,6 +36,8 @@ AWS Certified AI Business Strategist（**AIB-C01**）合格対策のための問
   - 「Technologies and concepts」「In-scope AWS services」のページも確認してください。
 - [AWS Cloud Adoption Framework for AI, ML, and Generative AI（ホワイトペーパー）](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html)
   - 6つのパースペクティブと、Envision / Align / Launch / Scale のフェーズ
+- [AWS 規範ガイダンス：生成AI成熟度モデル](https://docs.aws.amazon.com/ja_jp/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-levels.html)
+  - 4つのレベル（Envision / Experiment / Launch / Scale）の基準と、各レベルの主要な活動
 - AWS Well-Architected Framework の [Responsible AI Lens](https://aws.amazon.com/ai/responsible-ai/) / [Generative AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html)
 - [AWS 責任共有モデル](https://aws.amazon.com/compliance/shared-responsibility-model/)
 - [Amazon Bedrock ユーザーガイド](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)

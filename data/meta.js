@@ -21,7 +21,8 @@ window.AIB = {
     BEDROCK: { title: "Amazon Bedrock ユーザーガイド", url: "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html" },
     SAGEMAKER: { title: "Amazon SageMaker AI 開発者ガイド", url: "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html" },
     QUICK: { title: "Amazon Quick / Amazon Q", url: "https://aws.amazon.com/quick/" },
-    PRICING: { title: "Amazon Bedrock 料金 / AWS コスト管理", url: "https://aws.amazon.com/bedrock/pricing/" }
+    PRICING: { title: "Amazon Bedrock 料金 / AWS コスト管理", url: "https://aws.amazon.com/bedrock/pricing/" },
+    MATURITY: { title: "AWS 規範ガイダンス：生成AI成熟度モデル", url: "https://docs.aws.amazon.com/ja_jp/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-levels.html" }
   }
 };
 
